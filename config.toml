@@ -1,3 +1,29 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://blog.sadmansk.com/"
+builddrafts = false
+canonifyurls = true
+contentdir = "content"
 languageCode = "en-us"
-title = "My New Hugo Site"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Sadman Kazi"
+title = "Sad Blog"
+pygmentsuseclasses = true
+#disqusShortname = ""
+pluralizelisttitles = false
+
+[permalinks]
+fixed = ":title"
+blog = "blog/:slug"
+
+[params]
+Author = "Sadman Kazi"
+CacheBuster = true
+DateForm = "Jan 2, 2006"
+DateFormFull = "Mon Jan 2 2006 15:04:05 MST"
+Description = "Everyday nerd"
+Email = "sadmansazidk@gmail.com"
+GitHub = "//github.com/sadmansk"
+HighlightJS = true
+Lang = "en"
+LinkedIn = "//linkedin.com/in/sadmansk"
+Twitter = "//twitter.com/sadmansk"
