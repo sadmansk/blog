@@ -1,0 +1,3 @@
+[submodule "themes/cocoa-hugo-theme"]
+	path = themes/cocoa
+	url = https://git.sadmansk.com/sadmansk/cocoa-hugo-theme.git
