@@ -2,12 +2,13 @@ image: publysher/hugo
 
 before_script:
   - hugo version
+  - git submodule update --init --recursive
 
 pages:
   stage: deploy
   environment: Production
   script:
-    - hugo -t cocoa
+    - hugo -v -t cocoa
   artifacts:
     paths:
     - public
