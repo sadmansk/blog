@@ -1,0 +1,15 @@
+image: publysher/hugo
+
+before_script:
+  - hugo version
+
+pages:
+  stage: deploy
+  environment: Production
+  script:
+    - hugo -t cocoa
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
