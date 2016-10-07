@@ -2,7 +2,7 @@ baseurl = "https://blog.sadmansk.com/"
 builddrafts = false
 canonifyurls = true
 contentdir = "content"
-languageCode = "en-us"
+languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
 author = "Sadman Kazi"
@@ -12,8 +12,8 @@ pygmentsuseclasses = true
 pluralizelisttitles = false
 
 [permalinks]
-fixed = ":title"
-blog = "blog/:slug"
+fixed = ":title/"
+blog = "blog/:slug/"
 
 [params]
 Author = "Sadman Kazi"
