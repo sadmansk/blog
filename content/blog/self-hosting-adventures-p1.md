@@ -40,21 +40,21 @@ sdb                        8:16   0   1.8T  0 disk
 ```
 As it can be seen, I allocated my `/root`, `/boot` and swap partition to the SSD, while keeping my home directory and `/var` on the hard drive. When running a service that requires the use of a database, those databases go into `/var`, which is the standard destination for these types of data. Home mainly contains my Syncthing folder and occassionally I use it as a workspace for experimental builds. As the usage grows, I hope to easily extend the storage of both `/home` and `/var` using LVM.
 
-Then comes the topic of security, probably the most important part of this project. I never had experience with this before, but following a couple of guides I setup a firewall (using **), private/public key SSH, two-factor authentication, and login timeout mechanism (using fail2ban). For further reading, please read [this short guide](http://www.codelitt.com/blog/my-first-10-minutes-on-a-server-primer-for-securing-ubuntu/). Port forwarding and remote access had to be enable on my routers end so that I could SSH and maintain my server from anywhere I want. I did have some problems with dynamic IP, and ended up transfering my domain to [NoIP](no-ip.com) and installed their automatic DDNS update client on my server.
+Then comes the topic of security, probably the most important part of this project. I never had experience with this before, but following a couple of guides I setup a firewall (using ufw), private/public key SSH, two-factor authentication, and login timeout mechanism (using fail2ban). For further reading, please read [this short guide](http://www.codelitt.com/blog/my-first-10-minutes-on-a-server-primer-for-securing-ubuntu/). Port forwarding and remote access had to be enable on my routers end so that I could SSH and maintain my server from anywhere I want. I did have some problems with dynamic IP, and ended up transfering my domain to [NoIP](no-ip.com) and installed their automatic DDNS update client on my server.
 
 ## Services
-I primarily have an nginx web server running which contains server blocks to redirect different hosts to different ports on the server. The primary types of services that I will be focusing on deploying are:
-* File syncing
-* Communication platform
-* Git server
-* Notes and to-do manager
-* Finance manager
-* Static web server
+I primarily have an nginx web server running which contains server blocks to redirect different hosts to different ports on the server. The primary types of services that I will be focusing on deploying are:  
+- File syncing
+- Communication platform
+- Git server
+- Notes and to-do manager
+- Finance manager
+- Static web server
 
-Once all these are taken care of, I have plans to extend the range of services by adding things such as:
-* Email server
-* Social networking (Diaspora)
-* Nylas email sync engine
-* Cozy (replacement for Google services like calendar, drive, etc)
+Once all these are taken care of, I have plans to extend the range of services by adding things such as:  
+- Email server  
+- Social networking (Diaspora)  
+- Nylas email sync engine  
+- Cozy (replacement for Google services like calendar, drive, etc)  
 
 And probably a lot more to come. For each of these (types of) services, I plan to go into more specific details on later posts. This draws the conclusion to my first part. Next up I will discuss setting up TLS/SSL certificate with Let's Encrypt on an nginx server instance and separating server blocks.
