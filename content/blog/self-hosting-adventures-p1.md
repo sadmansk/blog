@@ -1,7 +1,7 @@
 +++
 date = "2016-08-13T04:05:25-06:00"
 draft = false
-title = "Self-hosting Adventures Part 1: Introducing Io"
+title = "Self-hosting Part 1: Introducing Io"
 
 +++
 
