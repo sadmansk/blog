@@ -1,7 +1,13 @@
 +++
+categories = ["self-hosting"]
+comments = false
 date = "2016-08-13T04:05:25-06:00"
 draft = false
-title = "Self-hosting Part 1: Introducing Io"
+showpagemeta = true
+slug = ""
+tags = ["development", "self-hosting", "privacy", "tutorial"]
+title = "Self-hosting Adventures Part 1"
+description = "Introducing my DIY server, Io"
 
 +++
 
