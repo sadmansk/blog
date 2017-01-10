@@ -50,17 +50,17 @@ Then comes the topic of security, probably the most important part of this proje
 
 ## Services
 I primarily have an nginx web server running which contains server blocks to redirect different hosts to different ports on the server. The primary types of services that I will be focusing on deploying are:  
-- File syncing
-- Communication platform
-- Git server
-- Notes and to-do manager
-- Finance manager
-- Static web server
+  - File syncing  
+  - Communication platform  
+  - Git server  
+  - Notes and to-do manager  
+  - Finance manager  
+  - Static web server  
 
 Once all these are taken care of, I have plans to extend the range of services by adding things such as:  
-- Email server  
-- Social networking (Diaspora)  
-- Nylas email sync engine  
-- Cozy (replacement for Google services like calendar, drive, etc)  
+  - Email server  
+  - Social networking (Diaspora)  
+  - Nylas email sync engine  
+  - Cozy (replacement for Google services like calendar, drive, etc)  
 
 And probably a lot more to come. For each of these (types of) services, I plan to go into more specific details on later posts. This draws the conclusion to my first part. Next up I will discuss setting up TLS/SSL certificate with Let's Encrypt on an nginx server instance and separating server blocks.
