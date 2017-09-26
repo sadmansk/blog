@@ -1,3 +1,7 @@
++++
+draft = true
++++ 
+
 Markdown files for blog hosted at https://sadmansk.com/blog
 -----------------------------------------------------------
 
